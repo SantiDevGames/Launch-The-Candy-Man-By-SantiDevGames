@@ -1,0 +1,86 @@
+# Launch-The-Candy-Man-By-SantiDevGames
+LAUNCH The Candy Man On Itch.io
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .horror-container {
+            background-color: #050505;
+            color: #d1d1d1;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            padding: 40px;
+            border: 2px solid #330000;
+            box-shadow: inset 0 0 30px rgba(255, 0, 0, 0.2);
+        }
+        .horror-title {
+            color: #ff1a1a;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.7), 0 0 20px rgba(255, 0, 0, 0.4);
+            animation: flicker 2s infinite alternate;
+        }
+        .horror-text {
+            font-size: 1.1em;
+            color: #a0a0a0;
+            margin: 20px auto;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+        .horror-btn {
+            display: inline-block;
+            background-color: #330000;
+            color: #ff4d4d;
+            border: 1px solid #ff1a1a;
+            padding: 12px 25px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: 0.3s;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+        }
+        .horror-btn:hover {
+            background-color: #ff1a1a;
+            color: #000;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+        }
+        .footer-rights {
+            margin-top: 40px;
+            font-size: 0.85em;
+            color: #666666;
+            letter-spacing: 1px;
+            border-top: 1px dashed #220000;
+            padding-top: 20px;
+        }
+        @keyframes flicker {
+            0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+                opacity: 1;
+                text-shadow: 0 0 10px rgba(255, 0, 0, 0.7), 0 0 20px rgba(255, 0, 0, 0.4);
+            }
+            20%, 24%, 55% {
+                opacity: 0.4;
+                text-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="horror-container">
+    <h1 class="horror-title">The Candy Man</h1>
+    <p class="horror-text">
+        El Candy Man sigue afuera... y vos necesitás sobrevivir. Sumergite en una experiencia de terror psicológico retro estilo PS1 desarrollada en Godot. Explorá la oscuridad, completá tus objetivos bajo presión y mantené tu linterna lista. ¿Podrás pasar la noche o te encontrará?
+    </p>
+    
+    <a href="https://santidevgames.itch.io" class="horror-btn" target="_blank">JUGAR EN ITCH.IO</a>
+
+    <div class="footer-rights">
+        TODOS LOS DERECHOS RESERVADOS A SantiDevGames
+    </div>
+</div>
+
+</body>
+</html>
