@@ -6,59 +6,108 @@ LAUNCH The Candy Man On Itch.io
     <meta charset="UTF-8">
     <style>
         .horror-container {
-            background-color: #050505;
-            color: #d1d1d1;
+            background-color: #030303;
+            color: #c7c7c7;
             font-family: 'Courier New', Courier, monospace;
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 40px 30px;
+            border: 3px solid #2a0000;
+            box-shadow: inset 0 0 50px rgba(255, 0, 0, 0.15), 0 0 30px rgba(0, 0, 0, 0.9);
             text-align: center;
-            padding: 40px;
-            border: 2px solid #330000;
-            box-shadow: inset 0 0 30px rgba(255, 0, 0, 0.2);
+        }
+        .horror-header {
+            border-bottom: 2px dashed #400000;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
         }
         .horror-title {
             color: #ff1a1a;
-            font-size: 2.5em;
+            font-size: 2.8em;
             text-transform: uppercase;
-            letter-spacing: 4px;
-            text-shadow: 0 0 10px rgba(255, 0, 0, 0.7), 0 0 20px rgba(255, 0, 0, 0.4);
-            animation: flicker 2s infinite alternate;
+            letter-spacing: 5px;
+            margin: 0 0 10px 0;
+            text-shadow: 0 0 12px rgba(255, 0, 0, 0.8), 0 0 25px rgba(255, 0, 0, 0.4);
+            animation: flicker 2.5s infinite alternate;
+        }
+        .horror-subtitle {
+            color: #8c8c8c;
+            font-size: 1em;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        .section-box {
+            background-color: #0d0d0d;
+            border: 1px solid #1f0505;
+            padding: 20px;
+            margin: 25px 0;
+            text-align: left;
+        }
+        .section-box h3 {
+            color: #e60000;
+            margin-top: 0;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 1px solid #2a0000;
+            padding-bottom: 8px;
         }
         .horror-text {
-            font-size: 1.1em;
-            color: #a0a0a0;
-            margin: 20px auto;
-            max-width: 600px;
-            line-height: 1.6;
+            font-size: 0.95em;
+            color: #adadad;
+            line-height: 1.7;
+            margin: 0;
+        }
+        .feature-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+        .feature-list li {
+            padding: 8px 0;
+            color: #b3b3b3;
+            border-bottom: 1px dotted #1a0000;
+            font-size: 0.9em;
+        }
+        .feature-list li::before {
+            content: "▶ ";
+            color: #ff1a1a;
         }
         .horror-btn {
-            display: inline-block;
-            background-color: #330000;
-            color: #ff4d4d;
-            border: 1px solid #ff1a1a;
-            padding: 12px 25px;
+            display: block;
+            background-color: #260000;
+            color: #ff3333;
+            border: 2px solid #ff1a1a;
+            padding: 15px;
             font-family: 'Courier New', Courier, monospace;
             font-weight: bold;
+            font-size: 1.1em;
             text-decoration: none;
-            margin-top: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 35px 0 20px 0;
             transition: 0.3s;
-            box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
         }
         .horror-btn:hover {
             background-color: #ff1a1a;
-            color: #000;
-            box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+            color: #030303;
+            box-shadow: 0 0 25px rgba(255, 0, 0, 0.9);
         }
         .footer-rights {
             margin-top: 40px;
             font-size: 0.85em;
-            color: #666666;
-            letter-spacing: 1px;
-            border-top: 1px dashed #220000;
-            padding-top: 20px;
+            color: #595959;
+            letter-spacing: 2px;
+            border-top: 2px dashed #2a0000;
+            padding-top: 25px;
+            text-transform: uppercase;
         }
         @keyframes flicker {
             0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
                 opacity: 1;
-                text-shadow: 0 0 10px rgba(255, 0, 0, 0.7), 0 0 20px rgba(255, 0, 0, 0.4);
+                text-shadow: 0 0 12px rgba(255, 0, 0, 0.8), 0 0 25px rgba(255, 0, 0, 0.4);
             }
             20%, 24%, 55% {
                 opacity: 0.4;
@@ -70,16 +119,42 @@ LAUNCH The Candy Man On Itch.io
 <body>
 
 <div class="horror-container">
-    <h1 class="horror-title">The Candy Man</h1>
-    <p class="horror-text">
-        El Candy Man sigue afuera... y vos necesitás sobrevivir. Sumergite en una experiencia de terror psicológico retro estilo PS1 desarrollada en Godot. Explorá la oscuridad, completá tus objetivos bajo presión y mantené tu linterna lista. ¿Podrás pasar la noche o te encontrará?
-    </p>
     
-    <a href="https://santidevgames.itch.io" class="horror-btn" target="_blank">JUGAR EN ITCH.IO</a>
+    <div class="horror-header">
+        <h1 class="horror-title">The Candy Man</h1>
+        <div class="horror-subtitle">StaticTape Games Production</div>
+    </div>
+
+    <div class="section-box">
+        <h3>// LA PESADILLA</h3>
+        <p class="horror-text">
+            El Candy Man sigue afuera en la oscuridad... y vos necesitás sobrevivir a toda costa. Sumergite en una experiencia de terror psicológico retro con una profunda estética inspirada en los clásicos de la era PS1, desarrollada desde cero en el motor Godot.
+        </p>
+    </div>
+
+    <div class="section-box">
+        <h3>// CARACTERÍSTICAS DEL JUEGO</h3>
+        <ul class="feature-list">
+            <li>Atmósfera densa y opresiva con diseño sonoro inmersivo.</li>
+            <li>Exploración de espacios oscuros y claustrofóbicos.</li>
+            <li>Sistema de linterna y gestión de recursos bajo presión.</li>
+            <li>Estética visual retro de baja resolución (PS1 style).</li>
+        </ul>
+    </div>
+
+    <div class="section-box">
+        <h3>// SOBRE EL DESARROLLO</h3>
+        <p class="horror-text">
+            Creado con pasión para llevar al límite la tensión y el miedo en formato corto. Cada rincón fue diseñado para mantenerte alerta ante lo inesperado. ¿Tendrás lo necesario para pasar la noche completa?
+        </p>
+    </div>
+
+    <a href="https://santidevgames.itch.io" class="horror-btn" target="_blank">JUGAR AHORA EN ITCH.IO</a>
 
     <div class="footer-rights">
         TODOS LOS DERECHOS RESERVADOS A SantiDevGames
     </div>
+
 </div>
 
 </body>
